@@ -1,25 +1,24 @@
+import 'dart:ffi';
 import 'dart:io';
 
 void main() {
-  var Students = [];
-  Map<String, dynamic> student1 = {
-    "name": "Yassir",
-    "score": 100,
+  final students = <Map<String, dynamic>>[
+    {"name": "Yassir", "score": 100},
+    {"name": "Ali", "score": 60},
+    {"name": "Ahmed", "score": 20},
+  ];
+
+  studentsReport(students);
+}
+
+void studentsReport(List<Map<String, dynamic>> students) 
+{
+  if (students.isEmpty) {
+    print("No students found");
+    return;
   };
 
-  Map<String, dynamic> student2 = {
-    "name": "Ali",
-    "score": 60,
-  };
-
-  Map<String, dynamic> student3 = {
-    "name": "Ahmed",
-    "score": 20,
-  };
-
-  Students.add(student1);
-  Students.add(student2);
-  Students.add(student3);
-
-  print(Students);
+  for (var st in students) {
+    print("Name: ${st["name"]}, Score: ${st["score"]}");
+  }
 }
