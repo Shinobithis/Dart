@@ -1,9 +1,25 @@
 import 'dart:io';
 
 void main() {
-  final String courseName = "Flutter & Dart";
-  var myScore = 100;
-  double pourcentage = 99.9;
+  var Students = [];
+  Map<String, dynamic> student1 = {
+    "name": "Yassir",
+    "score": 100,
+  };
 
-  print('My score in The $courseName course is $myScore, an A+ ($pourcentage%)');
+  Map<String, dynamic> student2 = {
+    "name": "Ali",
+    "score": 60,
+  };
+
+  Map<String, dynamic> student3 = {
+    "name": "Ahmed",
+    "score": 20,
+  };
+
+  Students.add(student1);
+  Students.add(student2);
+  Students.add(student3);
+
+  print(Students);
 }
