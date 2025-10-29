@@ -1,0 +1,13 @@
+# Dart/Pub artifacts
+.dart_tool/
+.packages
+.pub-cache/
+
+# IDE files
+.idea/
+.vscode/
+*.iml
+
+# OS-specific files
+.DS_Store
+Thumbs.db

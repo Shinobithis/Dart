@@ -1,18 +1,9 @@
 import 'dart:io';
 
 void main() {
-  stdout.write("Enter N: ");
-  int? N = int.tryParse(stdin.readLineSync() ?? '');
+  final String courseName = "Flutter & Dart";
+  var myScore = 100;
+  double pourcentage = 99.9;
 
-  if (N != null && N > 0) {
-    for (int i = 1; i <= N; i++) {
-      String line = '';
-      for (int j = 1; j <= i; j++) {
-        line += '$i';
-      }
-      print(line);
-    }
-  } else {
-    print("Please enter a valid positive integer.");
-  }
+  print('My score in The $courseName course is $myScore, an A+ ($pourcentage%)');
 }
