@@ -1,6 +1,3 @@
-import 'dart:ffi';
-import 'dart:io';
-
 void main() {
   final students = <Map<String, dynamic>>[
     {"name": "Yassir", "score": 100},
