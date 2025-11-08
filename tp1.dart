@@ -3,7 +3,10 @@ void main() {
     {"name": "Yassir", "score": 100},
     {"name": "Ali", "score": 60},
     {"name": "Ahmed", "score": 20},
+    {"Yassir": {"age":24, "score":30}}
   ];
+
+  print("Hello ${students["Yassir"]}");
 
   List n = [1,2,3,4,2,5,6565,656];
   List t = [1,2,3,4,2,5,6565,656];
@@ -41,8 +44,7 @@ void studentsReport(List<Map<String, dynamic>> students) {
   if (students.isEmpty) {
     print("No students found");
     return;
-  }
-  ;
+  };
 
   for (var st in students) {
     print("Name: ${st["name"]}, Score: ${st["score"]}");
